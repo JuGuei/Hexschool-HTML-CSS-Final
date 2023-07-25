@@ -195,6 +195,7 @@ table {
 }
 
 .compare-table th {
+  text-align: left; 	
   font-weight: bold;
   font-size: 18px;
   background: #F5F5F5;
