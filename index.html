@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML、CSS 最終作業</title>
+  <html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
 
-    <!-- 載入css檔案 -->
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <!-- 進階資訊設定 -->   
+  <title>Hexschool-HTML-CSS-Final</title>
+  <meta
+    name="description"
+    content="使用 HTML、CSS 開發一個網站的課程-最終作業"
+  />
+  <meta name="keywords" content="HTML, CSS, 六角學院" />
+  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">    
+  
+<!-- 進階資訊 FB 相關 -->
+  <meta property="og:title" content="HTML、CSS 最終作業" />
+  <meta
+    property="og:description"
+    content="使用 HTML、CSS 開發一個網站的課程-最終作業"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="FB上的網址" />
+  <meta property="og:image" content="FB的圖片" />
+
+ <!-- 載入css檔案 -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+   
 
 <div class="all">
     <div class="header">
@@ -17,37 +41,43 @@
       </ul>
       
       <!-- 頁首 -->
-      <div class="navbar">
-        <a href="#"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png" alt="LOGO" title="HexSchoolLOGO"></a>
-        <ul class="nav">
-         <li><a href="">首頁</a></li>
-         <li><a href="">產品介紹</a></li>
-         <li><a href="">聯絡我們</a></li>
-        </ul>
-      </div>
+    <div class="navbar">
+      <h1 id="top"><a href="#"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png" alt="LOGO" title="HexSchoolLOGO"></a></h1>
+      <ul class="nav">
+       <li><a href="#top">首頁</a></li>
+       <li><a href="#">產品介紹</a></li>
+       <li><a href="#">聯絡我們</a></li>
+      </ul>
     </div>
+  </div>
     
     <!-- banner -->
     <div class="banner">
-      <h3>六角學院<br>讓您奠定良好的前端基礎</h3>
+      <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
     </div>
     
     <!-- 課程介紹 -->
     <ul class="course-summary">
-      <li>
-          <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="HTML">
-          <h2>HTML 5 基礎教學</h2>
+      <li class="course-list">
+        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="HTML">
+        <h3>HTML 5 基礎教學</h3>
         <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
-        </li>
-      <li>
-          <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="RWD">
-          <h2>響應式網站設計</h2>
-          <p>響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p></li>
-      <li>
-          <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQuery">
-          <h2>jQuery 實戰教學</h2>
-          <p>本課程有以下特色<br>．瞭解變數的使用方法<br>．學習並操作DOM<br>．學習基本數學運算方法<br>．瞭套件的操作及運用</p> 
-       </li>
+      </li>
+    <li class="course-list">
+        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="RWD">
+        <h3>響應式網站設計</h3>
+        <p>響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p></li>
+    <li class="course-list">
+        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQuery">
+        <h3>jQuery 實戰教學</h3>
+        <p>本課程有以下特色</p>
+          <ul class="jQuery-features">
+            <li>瞭解變數的使用方法</li>
+            <li>學習並操作DOM</li>
+            <li>學習基本數學運算方法</li>
+            <li>瞭套件的操作及運用</li>
+       </ul>
+    </li>
      </ul>
     
     <!-- 表格 -->
@@ -99,39 +129,42 @@
        </table>
      </div>
     
-    <!-- 表單 -->
-    <section class="customer-info-box"> <!--學用section 群組區塊標籤-->
-       <label for="remark"><h3>對我們的課程有興趣嗎?</h3>
-       <h3>歡迎留下您的資料</h3></label>
-       <form action="#">
-       <textarea name="" id="remark" cols="30" rows="10" placeholder="請輸入相關內容"></textarea>
-       
-       <div class="customer-info">
-           <label for="name">姓名</label>
-           <input type="text" id="name" placeholder="請輸入姓名"> 
-           <label for="phone">電話</label>
-           <input type="text" id="phone" placeholder="請輸入手機號碼，格式為 09xx-xxx-xxx">
-           <label for="e-mail">信箱</label>
-           <input type="text" id="e-mail" placeholder="請輸入信箱">      
-         <button type="submit" name="btn"  value="送出">送出</button>
-       </div>  
-       </form>
-     </section>
+     <!-- 表單 -->
+  <section class="customer-info-box"> <!--學用section 群組區塊標籤-->
+    <label for="remark">
+      <h3>對我們的課程有興趣嗎?<br/>歡迎留下您的資料</h3>
+    </label>
+    <form action="#">
+    <textarea name="remark" id="remark" rows="10" placeholder="請輸入相關內容"></textarea>
     
-   <!-- 頁尾 --> 
-     <div class="footer">
-       <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png" alt="LOGO">
-       <ul class="footer-info">
-         <li>聯絡我們： 
-           <a href="#">hexschool@gmail.com
-           </a>  
-           </li>
-         <li>電話： 
-           <a href="#">0999123456</a></li>
-       </ul>
-     </div>
-      
+    <div class="customer-info">
+        <label for="name">姓名</label>
+        <input type="text" id="name" placeholder="請輸入姓名"> 
+        <label for="phone">電話</label>
+        <input type="text" id="phone" placeholder="請輸入手機號碼，格式為 09xx-xxx-xxx">
+        <label for="e-mail">信箱</label>
+        <input type="text" id="e-mail" placeholder="請輸入信箱">      
+      <button type="submit" name="btn"  value="送出">送出</button>
+    </div>  
+    </form>
+  </section>
+ 
+<!-- 頁尾 --> 
+  <div class="footer">
+    <a href="#top"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png" alt="LOGO"></a>
+    <ul class="footer-info">
+      <li>聯絡我們： 
+        <a href="mailto:hexschool@gmail.com">hexschool@gmail.com</a>
+      </li>
+      <li>電話： 
+        <a href="tel:+886-0999123456">0999-123-456</a>  
+      </li>
+    </ul>
   </div>
+ 
+ 
+</div>
+
 
 </body>
 </html>
