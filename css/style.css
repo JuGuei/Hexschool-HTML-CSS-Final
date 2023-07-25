@@ -59,6 +59,7 @@ table {
 }
 
 /*header 頁首*/
+
 /*SNS 社群連結*/
 .SNS{
   display: flex;
@@ -126,7 +127,7 @@ table {
   align-items: center;
 }
 
-.banner h3 {
+.banner h2 {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);/*引用來的半透明效果*/
   width: 100%;
@@ -147,14 +148,14 @@ table {
   width: 280px;
 }
 
-.course-summary li {
+.course-list {
   margin: 40px 20px;
   border: 1px solid #cccccc;
   border-radius: 5px;
   box-shadow: 0 2px 3px #cccccc;  
 }
 
-.course-summary li:hover {
+.course-list:hover {
   margin: 40px 20px;
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -162,7 +163,7 @@ table {
   transition: all 0.4s;
 }
 
-.course-summary h2 {
+.course-summary h3 {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -172,6 +173,11 @@ table {
 .course-summary p {
   line-height: 20px;
   margin: 10px 15px 20px 15px;
+}
+
+.jQuery-features li {
+  list-style: disc;
+  margin-left: 20px;
 }
 
 /*compare 比較表格*/
@@ -184,7 +190,7 @@ table {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  margin: 10px 10px 20px 10px;    
+  margin: 10px 10px 20px 10px;  
 }
 
 .compare-table th {
@@ -212,15 +218,14 @@ table {
 .customer-info-box {
   padding: 40px 20px;
   background: linear-gradient(#00654c, #009670);
-  
-}
+ }
 
 .customer-info-box h3 {
   color: white;
   text-align: center;
   font-size: 25px;
   /*font-weight: bold;*/
-  line-height: 5px;
+  line-height: 1.4;
   margin-bottom: 35px;
 }
 
@@ -230,7 +235,7 @@ table {
 }
 
 .customer-info-box textarea {
-  width: 50%;
+  width: 440px;
   margin-right: 40px;
   border-radius: 3px;
   border: 1px solid #e1e1e1;
@@ -241,9 +246,7 @@ table {
 
 .customer-info {
   display: flex;
-  flex-direction:column;
-  position: relative;
-  
+  flex-direction:column;  
 }
 
 .customer-info label {
@@ -258,7 +261,8 @@ table {
 }
 
 button {
-  margin: 10px 5px;
+  cursor: pointer; /*增user回饋*/
+  margin: 15px 0 5px;
   padding: 5px;
   width: 70px;
   color: #fff;
@@ -266,9 +270,7 @@ button {
   border-radius: 3px;
   border: none;
   font-weight: bold;
-  position: absolute;
-  right: -5px;
-  bottom: -50px;
+  align-self: end;
 }
 
 button:hover {
