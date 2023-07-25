@@ -171,13 +171,14 @@ table {
 }
 
 .course-summary p {
-  line-height: 20px;
+  line-height: 1.5;
   margin: 10px 15px 20px 15px;
 }
 
 .jQuery-features li {
   list-style: disc;
   margin-left: 20px;
+  padding-bottom: 10px;	
 }
 
 /*compare 比較表格*/
